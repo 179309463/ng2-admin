@@ -6,14 +6,15 @@ import { NgaModule } from '../../theme/nga.module';
 import { Dashboard } from './component';
 import { routing }       from './routing';
 
-import { PopularApp } from './popularApp';
-import { PieChart } from './pieChart';
-import { TrafficChart } from './trafficChart';
-import { UsersMap } from './usersMap';
-import { LineChart } from './lineChart';
-import { Feed } from './feed';
-import { Todo } from './todo';
-import { Calendar } from './calendar';
+import { PopularApp } from './popularApp/component';
+import { PieChart } from './pieChart/component';
+import { TrafficChart } from './trafficChart/component';
+import { UsersMap } from './usersMap/component';
+import { LineChart } from './lineChart/component';
+import { Feed } from './feed/component';
+import { Todo } from './todo/component';
+import { Calendar } from './calendar/component';
+
 import { CalendarService } from './calendar/service';
 import { FeedService } from './feed/service';
 import { LineChartService } from './lineChart/service';

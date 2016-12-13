@@ -1,5 +1,5 @@
 import {Component, ViewEncapsulation} from '@angular/core';
-import {BaThemeConfigProvider} from '../../../theme';
+import {BaThemeConfigProvider} from '../../../theme/configProvider';
 
 import {TodoService} from './service';
 

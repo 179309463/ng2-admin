@@ -1,6 +1,6 @@
 import {Component, ViewChild, ViewEncapsulation, Input, Output, ElementRef, EventEmitter} from '@angular/core';
 
-import {BaThemePreloader} from '../../../theme/services';
+import {BaThemePreloader} from '../../../theme/services/baThemePreloader';
 
 import './loader.ts';
 import {BaAmChartThemeService} from './service';

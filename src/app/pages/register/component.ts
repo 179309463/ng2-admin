@@ -1,6 +1,7 @@
 import {Component, ViewEncapsulation} from '@angular/core';
 import {FormGroup, AbstractControl, FormBuilder, Validators} from '@angular/forms';
-import {EmailValidator, EqualPasswordsValidator} from '../../theme/validators';
+import {EmailValidator} from '../../theme/validators/email.validator';
+import {EqualPasswordsValidator} from '../../theme/validators/equalPasswords.validator';
 
 @Component({
   selector: 'register',

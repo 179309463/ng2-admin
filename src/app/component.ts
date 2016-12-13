@@ -1,7 +1,9 @@
 import './loader.ts';
 import { Component, ViewEncapsulation, ViewContainerRef } from '@angular/core';
 import { GlobalState } from './global.state';
-import { BaImageLoaderService, BaThemePreloader, BaThemeSpinner } from './theme/services';
+import { BaImageLoaderService } from './theme/services/baImageLoader';
+import { BaThemePreloader } from './theme/services/baThemePreloader';
+import { BaThemeSpinner } from './theme/services/baThemeSpinner';
 import { layoutPaths } from './theme/constants';
 import { BaThemeConfig } from './theme/config';
 import {ComponentsHelper } from 'ng2-bootstrap';

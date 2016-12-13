@@ -12,14 +12,14 @@ import { Icons } from './components/icons/component';
 import { Modals } from './components/modals/component';
 import { Typography } from './components/typography/component';
 
-import { FlatButtons } from './components/buttons/components/flatButtons';
-import { RaisedButtons } from './components/buttons/components/raisedButtons';
-import { SizedButtons } from './components/buttons/components/sizedButtons';
-import { DisabledButtons } from './components/buttons/components/disabledButtons';
-import { IconButtons } from './components/buttons/components/iconButtons';
-import { LargeButtons } from './components/buttons/components/largeButtons';
-import { DropdownButtons } from './components/buttons/components/dropdownButtons';
-import { GroupButtons } from './components/buttons/components/groupButtons';
+import { FlatButtons } from './components/buttons/components/flatButtons/component';
+import { RaisedButtons } from './components/buttons/components/raisedButtons/component';
+import { SizedButtons } from './components/buttons/components/sizedButtons/component';
+import { DisabledButtons } from './components/buttons/components/disabledButtons/component';
+import { IconButtons } from './components/buttons/components/iconButtons/component';
+import { LargeButtons } from './components/buttons/components/largeButtons/component';
+import { DropdownButtons } from './components/buttons/components/dropdownButtons/component';
+import { GroupButtons } from './components/buttons/components/groupButtons/component';
 import { IconsService } from './components/icons/service';
 
 

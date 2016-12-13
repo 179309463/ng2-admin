@@ -3,55 +3,43 @@ import { CommonModule }  from '@angular/common';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 
-import {
-  BaThemeConfig
-} from './config';
+import { BaThemeConfig } from './config';
 
-import {
-  BaThemeConfigProvider
-} from './configProvider';
+import { BaThemeConfigProvider } from './configProvider';
 
-import {
-  BaAmChart,
-  BaBackTop,
-  BaCard,
-  BaChartistChart,
-  BaCheckbox,
-  BaContentTop,
-  BaFullCalendar,
-  BaMenuItem,
-  BaMenu,
-  BaMsgCenter,
-  BaMultiCheckbox,
-  BaPageTop,
-  BaPictureUploader,
-  BaSidebar
-} from './components';
+import { BaAmChart }         from './components/baAmChart/component';
+import { BaBackTop }         from './components/baBackTop/component';
+import { BaCard }            from './components/baCard/component';
+import { BaChartistChart }   from './components/baChartistChart/component';
+import { BaCheckbox }        from './components/baCheckbox/component';
+import { BaContentTop }      from './components/baContentTop/component';
+import { BaFullCalendar }    from './components/baFullCalendar/component';
+import { BaMenuItem }        from './components/baMenu/components/baMenuItem/component';
+import { BaMenu }            from './components/BaMenu/component';
+import { BaMsgCenter }       from './components/BaMsgCenter/component';
+import { BaMultiCheckbox }   from './components/baMultiCheckbox/component';
+import { BaPageTop }         from './components/baPageTop/component';
+import { BaPictureUploader } from './components/baPictureUploader/component';
+import { BaSidebar }         from './components/baSidebar/component';
 
-import { BaCardBlur } from './components/baCard/directive';
+import { BaCardBlur }        from './components/baCard/directive';
 
-import {
-  BaScrollPosition,
-  BaSlimScroll,
-  BaThemeRun
-} from './directives';
+import { BaScrollPosition }  from './directives/baScrollPosition';
+import { BaSlimScroll }      from './directives/baSlimScroll';
+import { BaThemeRun }        from './directives/baThemeRun';
 
-import {
-  BaAppPicturePipe,
-  BaKameleonPicturePipe,
-  BaProfilePicturePipe
-} from './pipes';
+import { BaAppPicturePipe }      from './pipes/baAppPicture';
+import { BaKameleonPicturePipe } from './pipes/baKameleonPicture';
+import { BaProfilePicturePipe }  from './pipes/baProfilePicture';
 
-import {
-  BaImageLoaderService,
-  BaThemePreloader,
-  BaThemeSpinner
-} from './services';
+import { BaImageLoaderService } from './services/baImageLoader';
+import { BaThemePreloader }     from './services/baThemePreloader';
+import { BaThemeSpinner }       from './services/baThemeSpinner';
+ 
+import { EmailValidator }           from './validators/email.validator';
+import { EqualPasswordsValidator }  from './validators/equalPasswords.validator';
+  
 
-import {
-  EmailValidator,
-  EqualPasswordsValidator
-} from './validators';
 
 const NGA_COMPONENTS = [
   BaAmChart,

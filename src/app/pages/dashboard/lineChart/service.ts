@@ -1,5 +1,7 @@
 import {Injectable} from '@angular/core';
-import {BaThemeConfigProvider, colorHelper, layoutPaths} from '../../../theme';
+import {BaThemeConfigProvider} from '../../../theme/configProvider';
+import {colorHelper, layoutPaths} from '../../../theme/constants';
+
 
 @Injectable()
 export class LineChartService {

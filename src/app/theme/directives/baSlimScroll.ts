@@ -1,6 +1,6 @@
 import {Directive, Input, Output, ElementRef, EventEmitter} from '@angular/core';
 
-import './loader.ts';
+import './baSlimScroll.loader.ts';
 
 @Directive({
   selector: '[baSlimScroll]'
