@@ -6,7 +6,7 @@ import { TreeComponent } from 'ng2-tree/index';
 
 import { routing }       from './routing';
 import { Components } from './component';
-import { TreeView } from './components/treeView/component';
+import { TreeView } from './treeView/component';
 
 // TODO: tree component?
 @NgModule({

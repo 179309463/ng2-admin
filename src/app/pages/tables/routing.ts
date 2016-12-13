@@ -1,8 +1,8 @@
 import { Routes, RouterModule }  from '@angular/router';
 
 import { Tables } from './component';
-import { BasicTables } from './components/basicTables/component';
-import { SmartTables } from './components/smartTables/component';
+import { BasicTables } from './basicTables/component';
+import { SmartTables } from './smartTables/component';
 
 // noinspection TypeScriptValidateTypes
 const routes: Routes = [

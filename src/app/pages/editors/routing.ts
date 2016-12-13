@@ -1,7 +1,7 @@
 import { Routes, RouterModule }  from '@angular/router';
 
 import { Editors } from './component';
-import { Ckeditor } from './components/ckeditor/component';
+import { Ckeditor } from './ckeditor/component';
 
 // noinspection TypeScriptValidateTypes
 const routes: Routes = [

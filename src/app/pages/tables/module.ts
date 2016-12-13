@@ -5,17 +5,17 @@ import { NgaModule } from '../../theme/nga.module';
 
 import { routing }       from './routing';
 import { Tables } from './component';
-import { BasicTables } from './components/basicTables/component';
-import { SmartTables } from './components/smartTables/component';
+import { BasicTables } from './basicTables/component';
+import { SmartTables } from './smartTables/component';
 import { Ng2SmartTableModule } from 'ng2-smart-table';
-import { BasicTablesService } from './components/basicTables/service';
-import { ResponsiveTable } from './components/basicTables/components/responsiveTable/component';
-import { StripedTable } from './components/basicTables/components/stripedTable/component';
-import { BorderedTable } from './components/basicTables/components/borderedTable/component';
-import { HoverTable } from './components/basicTables/components/hoverTable/component';
-import { CondensedTable } from './components/basicTables/components/condensedTable/component';
-import { ContextualTable } from './components/basicTables/components/contextualTable/component';
-import { SmartTablesService } from './components/smartTables/service';
+import { BasicTablesService } from './basicTables/service';
+import { ResponsiveTable } from './basicTables/responsiveTable/component';
+import { StripedTable } from './basicTables/stripedTable/component';
+import { BorderedTable } from './basicTables/borderedTable/component';
+import { HoverTable } from './basicTables/hoverTable/component';
+import { CondensedTable } from './basicTables/condensedTable/component';
+import { ContextualTable } from './basicTables/contextualTable/component';
+import { SmartTablesService } from './smartTables/service';
 
 
 @NgModule({

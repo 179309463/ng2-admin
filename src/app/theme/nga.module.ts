@@ -14,7 +14,7 @@ import { BaChartistChart }   from './components/baChartistChart/component';
 import { BaCheckbox }        from './components/baCheckbox/component';
 import { BaContentTop }      from './components/baContentTop/component';
 import { BaFullCalendar }    from './components/baFullCalendar/component';
-import { BaMenuItem }        from './components/baMenu/components/baMenuItem/component';
+import { BaMenuItem }        from './components/baMenuItem/component';
 import { BaMenu }            from './components/BaMenu/component';
 import { BaMsgCenter }       from './components/BaMsgCenter/component';
 import { BaMultiCheckbox }   from './components/baMultiCheckbox/component';

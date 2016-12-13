@@ -6,7 +6,7 @@ import { NgaModule } from '../../theme/nga.module';
 
 import { routing }       from './routing';
 import { Editors } from './component';
-import { Ckeditor } from './components/ckeditor/component';
+import { Ckeditor } from './ckeditor/component';
 
 
 @NgModule({

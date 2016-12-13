@@ -1,10 +1,10 @@
 import { Routes, RouterModule }  from '@angular/router';
 
 import { Maps } from './component';
-import { BubbleMaps } from './components/bubbleMaps/component';
-import { GoogleMaps } from './components/googleMaps/component';
-import { LeafletMaps } from './components/leafletMaps/component';
-import { LineMaps } from './components/lineMaps/component';
+import { BubbleMaps } from './bubbleMaps/component';
+import { GoogleMaps } from './googleMaps/component';
+import { LeafletMaps } from './leafletMaps/component';
+import { LineMaps } from './lineMaps/component';
 
 // noinspection TypeScriptValidateTypes
 const routes: Routes = [

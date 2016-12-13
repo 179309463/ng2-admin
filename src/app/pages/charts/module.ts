@@ -5,8 +5,8 @@ import { NgaModule } from '../../theme/nga.module';
 
 import { routing }       from './routing';
 import { Charts } from './component';
-import { ChartistJs } from './components/chartistJs/component';
-import { ChartistJsService } from './components/chartistJs/service';
+import { ChartistJs } from './chartistJs/component';
+import { ChartistJsService } from './chartistJs/service';
 
 
 @NgModule({

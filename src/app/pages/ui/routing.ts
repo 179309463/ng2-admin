@@ -1,11 +1,11 @@
 import { Routes, RouterModule }  from '@angular/router';
 
 import { Ui } from './component';
-import { Buttons } from './components/buttons/component';
-import { Grid } from './components/grid/component';
-import { Icons } from './components/icons/component';
-import { Modals } from './components/modals/component';
-import { Typography } from './components/typography/component';
+import { Buttons } from './buttons/component';
+import { Grid } from './grid/component';
+import { Icons } from './icons/component';
+import { Modals } from './modals/component';
+import { Typography } from './typography/component';
 
 // noinspection TypeScriptValidateTypes
 const routes: Routes = [

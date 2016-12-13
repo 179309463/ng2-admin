@@ -1,7 +1,7 @@
 import { Routes, RouterModule }  from '@angular/router';
 
 import { Charts } from './component';
-import { ChartistJs } from './components/chartistJs/component';
+import { ChartistJs } from './chartistJs/component';
 
 // noinspection TypeScriptValidateTypes
 const routes: Routes = [

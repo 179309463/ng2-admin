@@ -5,12 +5,12 @@ import { NgaModule } from '../../theme/nga.module';
 
 import { routing }       from './routing';
 import { Maps } from './component';
-import { BubbleMaps } from './components/bubbleMaps/component';
-import { GoogleMaps } from './components/googleMaps/component';
-import { LeafletMaps } from './components/leafletMaps/component';
-import { LineMaps } from './components/lineMaps/component';
-import { BubbleMapsService } from './components/bubbleMaps/service';
-import { LineMapsService } from './components/lineMaps/service';
+import { BubbleMaps } from './bubbleMaps/component';
+import { GoogleMaps } from './googleMaps/component';
+import { LeafletMaps } from './leafletMaps/component';
+import { LineMaps } from './lineMaps/component';
+import { BubbleMapsService } from './bubbleMaps/service';
+import { LineMapsService } from './lineMaps/service';
 
 
 @NgModule({

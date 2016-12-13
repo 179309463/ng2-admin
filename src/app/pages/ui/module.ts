@@ -6,21 +6,21 @@ import { NgaModule } from '../../theme/nga.module';
 import { routing }       from './routing';
 import { DropdownModule, ModalModule } from 'ng2-bootstrap/ng2-bootstrap';
 import { Ui } from './component';
-import { Buttons } from './components/buttons/component';
-import { Grid } from './components/grid/component';
-import { Icons } from './components/icons/component';
-import { Modals } from './components/modals/component';
-import { Typography } from './components/typography/component';
+import { Buttons } from './buttons/component';
+import { Grid } from './grid/component';
+import { Icons } from './icons/component';
+import { Modals } from './modals/component';
+import { Typography } from './typography/component';
 
-import { FlatButtons } from './components/buttons/components/flatButtons/component';
-import { RaisedButtons } from './components/buttons/components/raisedButtons/component';
-import { SizedButtons } from './components/buttons/components/sizedButtons/component';
-import { DisabledButtons } from './components/buttons/components/disabledButtons/component';
-import { IconButtons } from './components/buttons/components/iconButtons/component';
-import { LargeButtons } from './components/buttons/components/largeButtons/component';
-import { DropdownButtons } from './components/buttons/components/dropdownButtons/component';
-import { GroupButtons } from './components/buttons/components/groupButtons/component';
-import { IconsService } from './components/icons/service';
+import { FlatButtons } from './buttons/flatButtons/component';
+import { RaisedButtons } from './buttons/raisedButtons/component';
+import { SizedButtons } from './buttons/sizedButtons/component';
+import { DisabledButtons } from './buttons/disabledButtons/component';
+import { IconButtons } from './buttons/iconButtons/component';
+import { LargeButtons } from './buttons/largeButtons/component';
+import { DropdownButtons } from './buttons/dropdownButtons/component';
+import { GroupButtons } from './buttons/groupButtons/component';
+import { IconsService } from './icons/service';
 
 
 @NgModule({

@@ -1,8 +1,8 @@
 import { Routes, RouterModule }  from '@angular/router';
 
 import { Forms } from './component';
-import { Inputs } from './components/inputs/component';
-import { Layouts } from './components/layouts/component';
+import { Inputs } from './inputs/component';
+import { Layouts } from './layouts/component';
 
 // noinspection TypeScriptValidateTypes
 const routes: Routes = [
