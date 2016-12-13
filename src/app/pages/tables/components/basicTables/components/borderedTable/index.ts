@@ -1,1 +1,1 @@
-export * from './borderedTable.component';
+export * from './component';

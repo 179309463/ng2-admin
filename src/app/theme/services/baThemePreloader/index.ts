@@ -1,1 +1,1 @@
-export * from './baThemePreloader.service';
+export * from './service';

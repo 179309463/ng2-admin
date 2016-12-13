@@ -1,1 +1,1 @@
-export * from './baBackTop.component';
+export * from './component';

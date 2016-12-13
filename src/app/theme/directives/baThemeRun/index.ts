@@ -1,1 +1,1 @@
-export * from './baThemeRun.directive';
+export * from './directive';

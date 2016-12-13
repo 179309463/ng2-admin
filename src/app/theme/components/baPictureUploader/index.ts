@@ -1,1 +1,1 @@
-export * from './baPictureUploader.component';
+export * from './component';

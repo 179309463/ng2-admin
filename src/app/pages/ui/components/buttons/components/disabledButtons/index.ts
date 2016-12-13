@@ -1,1 +1,1 @@
-export * from './disabledButtons.component';
+export * from './component';

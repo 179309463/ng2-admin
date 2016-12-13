@@ -5,11 +5,11 @@ import { RouterModule } from '@angular/router';
 
 import {
   BaThemeConfig
-} from './theme.config';
+} from './config';
 
 import {
   BaThemeConfigProvider
-} from './theme.configProvider';
+} from './configProvider';
 
 import {
   BaAmChart,
@@ -28,7 +28,7 @@ import {
   BaSidebar
 } from './components';
 
-import { BaCardBlur } from './components/baCard/baCardBlur.directive';
+import { BaCardBlur } from './components/baCard/directive';
 
 import {
   BaScrollPosition,

@@ -1,1 +1,1 @@
-export * from './lineMaps.component';
+export * from './component';

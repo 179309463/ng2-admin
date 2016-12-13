@@ -1,1 +1,1 @@
-export * from './usersMap.component';
+export * from './component';
