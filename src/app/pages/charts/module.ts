@@ -4,8 +4,8 @@ import { FormsModule } from '@angular/forms';
 import { Routes, RouterModule } from '@angular/router';
 import { NgaModule } from '../../theme/nga.module';
 
-import { ChartistJs } from './chartistJs/component';
-import { ChartistJsService } from './chartistJs/service';
+import { ChartistJs } from './chartist/component';
+import { ChartistJsService } from './chartist/service';
 
 @Component({
   selector: 'maps',
@@ -19,7 +19,7 @@ const routing = RouterModule.forChild([
     path: '',
     component: Charts,
     children: [
-      { path: 'chartist-js', component: ChartistJs }
+      { path: 'chartist', component: ChartistJs }
     ]
   }
 ]);

@@ -5,7 +5,7 @@ import { Routes, RouterModule }  from '@angular/router';
 import { NgaModule } from '../../theme/nga.module';
 import { TreeComponent } from 'ng2-tree/index';
 
-import { TreeView } from './treeView/component';
+import { Tree } from './tree/component';
 
 @Component({
   selector: 'components',
@@ -19,7 +19,7 @@ const routing = RouterModule.forChild([
     path: '',
     component: Components,
     children: [
-      { path: 'treeview', component: TreeView }
+      { path: 'tree', component: Tree }
     ]
   }
 ]);
@@ -34,7 +34,7 @@ const routing = RouterModule.forChild([
   ],
   declarations: [
     Components,
-    TreeView,
+    Tree,
     TreeComponent
   ]
 })

@@ -4,12 +4,13 @@ import { FormsModule } from '@angular/forms';
 import { Routes, RouterModule }  from '@angular/router';
 import { NgaModule } from '../../theme/nga.module';
 
-import { BubbleMaps } from './bubbleMaps/component';
-import { GoogleMaps } from './googleMaps/component';
-import { LeafletMaps } from './leafletMaps/component';
-import { LineMaps } from './lineMaps/component';
-import { BubbleMapsService } from './bubbleMaps/service';
-import { LineMapsService } from './lineMaps/service';
+import { BubbleMaps } from './bubble/component';
+import { GoogleMaps } from './google/component';
+import { LeafletMaps } from './leaflet/component';
+import { LineMaps } from './line/component';
+
+import { BubbleMapsService } from './bubble/service';
+import { LineMapsService } from './line/service';
 
 @Component({
   selector: 'maps',
@@ -23,10 +24,10 @@ const routing = RouterModule.forChild([
     path: '',
     component: Maps,
     children: [
-      { path: 'bubblemaps', component: BubbleMaps },
-      { path: 'googlemaps', component: GoogleMaps },
-      { path: 'leafletmaps', component: LeafletMaps },
-      { path: 'linemaps', component: LineMaps }
+      { path: 'bubble', component: BubbleMaps },
+      { path: 'google', component: GoogleMaps },
+      { path: 'leaflet', component: LeafletMaps },
+      { path: 'line', component: LineMaps }
     ]
   }
 ]);

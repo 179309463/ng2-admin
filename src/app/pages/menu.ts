@@ -49,7 +49,7 @@ export const PAGES_MENU = [
        },
        children: [
          {
-           path: 'treeview',
+           path: 'tree',
            data: {
              menu: {
                title: 'Tree View',
@@ -71,10 +71,10 @@ export const PAGES_MENU = [
         },
         children: [
           {
-            path: 'chartist-js',
+            path: 'chartist',
             data: {
               menu: {
-                title: 'Chartist.Js',
+                title: 'Chartist',
               }
             }
           }
@@ -207,7 +207,7 @@ export const PAGES_MENU = [
         },
         children: [
           {
-            path: 'googlemaps',
+            path: 'google',
             data: {
               menu: {
                 title: 'Google Maps',
@@ -215,7 +215,7 @@ export const PAGES_MENU = [
             }
           },
           {
-            path: 'leafletmaps',
+            path: 'leaflet',
             data: {
               menu: {
                 title: 'Leaflet Maps',
@@ -223,7 +223,7 @@ export const PAGES_MENU = [
             }
           },
           {
-            path: 'bubblemaps',
+            path: 'bubble',
             data: {
               menu: {
                 title: 'Bubble Maps',
@@ -231,7 +231,7 @@ export const PAGES_MENU = [
             }
           },
           {
-            path: 'linemaps',
+            path: 'line',
             data: {
               menu: {
                 title: 'Line Maps',

@@ -6,7 +6,7 @@ import {TreeModel} from 'ng2-tree';
   template: require('./template.html'),
 })
 
-export class TreeView {
+export class Tree {
 
   private tree: TreeModel = {
     value: 'Programming languages by programming paradigm',
