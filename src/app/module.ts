@@ -1,15 +1,14 @@
 import { NgModule, ApplicationRef } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { Routes, RouterModule } from '@angular/router';
 import { HttpModule } from '@angular/http';
-import { RouterModule } from '@angular/router';
 import { removeNgStyles, createNewHosts, createInputTransfer } from '@angularclass/hmr';
 
 /*
  * Platform and Environment providers/directives/pipes
  */
 import { ENV_PROVIDERS } from './environment';
-import { routing } from './routing';
 
 // App is our top level component
 import { App } from './component';
@@ -17,6 +16,11 @@ import { AppState, InternalStateType } from './service';
 import { GlobalState } from './global.state';
 import { NgaModule } from './theme/nga.module';
 import { PagesModule } from './pages/module';
+
+const routing = RouterModule.forRoot([
+  { path: '', redirectTo: 'pages', pathMatch: 'full' },
+  { path: '**', redirectTo: 'pages/dashboard' }
+], { useHash: true });
 
 // Application wide providers
 const APP_PROVIDERS = [

@@ -1,11 +1,10 @@
-import { NgModule }      from '@angular/core';
+import { NgModule, Component }      from '@angular/core';
 import { CommonModule }  from '@angular/common';
 import { FormsModule } from '@angular/forms';
+import { Routes, RouterModule }  from '@angular/router';
 import { NgaModule } from '../../theme/nga.module';
 
-import { routing }       from './routing';
 import { DropdownModule, ModalModule } from 'ng2-bootstrap/ng2-bootstrap';
-import { Ui } from './component';
 import { Buttons } from './buttons/component';
 import { Grid } from './grid/component';
 import { Icons } from './icons/component';
@@ -22,6 +21,26 @@ import { DropdownButtons } from './buttons/dropdownButtons/component';
 import { GroupButtons } from './buttons/groupButtons/component';
 import { IconsService } from './icons/service';
 
+@Component({
+  selector: 'ui',
+  styles: [],
+  template: `<router-outlet></router-outlet>`
+})
+class Ui {}
+
+const routing = RouterModule.forChild([
+  {
+    path: '',
+    component: Ui,
+    children: [
+      { path: 'buttons', component: Buttons },
+      { path: 'grid', component: Grid },
+      { path: 'icons', component: Icons },
+      { path: 'typography', component: Typography },
+      { path: 'modals', component: Modals }
+    ]
+  }
+]);
 
 @NgModule({
   imports: [

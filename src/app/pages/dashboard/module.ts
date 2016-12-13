@@ -1,10 +1,8 @@
-import { NgModule }      from '@angular/core';
+import { NgModule, Component, ViewEncapsulation } from '@angular/core';
 import { CommonModule }  from '@angular/common';
 import { FormsModule } from '@angular/forms';
+import { Routes, RouterModule }  from '@angular/router';
 import { NgaModule } from '../../theme/nga.module';
-
-import { Dashboard } from './component';
-import { routing }       from './routing';
 
 import { PopularApp } from './popularApp/component';
 import { PieChart } from './pieChart/component';
@@ -22,6 +20,24 @@ import { PieChartService } from './pieChart/service';
 import { TodoService } from './todo/service';
 import { TrafficChartService } from './trafficChart/service';
 import { UsersMapService } from './usersMap/service';
+
+@Component({
+  selector: 'dashboard',
+  encapsulation: ViewEncapsulation.None,
+  styles: [require('./style.scss')],
+  template: require('./template.html')
+})
+class Dashboard {}
+
+const routing = RouterModule.forChild([
+  {
+    path: '',
+    component: Dashboard,
+    children: [
+      //{ path: 'treeview', component: TreeViewComponent }
+    ]
+  }
+]);
 
 @NgModule({
   imports: [

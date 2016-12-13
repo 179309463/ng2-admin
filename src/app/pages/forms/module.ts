@@ -1,12 +1,10 @@
-import { NgModule }      from '@angular/core';
+import { NgModule, Component }      from '@angular/core';
 import { CommonModule }  from '@angular/common';
 import { FormsModule as AngularFormsModule } from '@angular/forms';
+import { Routes, RouterModule }  from '@angular/router';
 import { NgaModule } from '../../theme/nga.module';
 
-import { routing }       from './routing';
-
 import { RatingModule } from 'ng2-bootstrap/ng2-bootstrap';
-import { Forms } from './component';
 import { Inputs } from './inputs/component';
 import { Layouts } from './layouts/component';
 
@@ -22,6 +20,27 @@ import { BlockForm } from './layouts/blockForm/component';
 import { HorizontalForm } from './layouts/horizontalForm/component';
 import { BasicForm } from './layouts/basicForm/component';
 import { WithoutLabelsForm } from './layouts/withoutLabelsForm/component';
+
+import {} from '@angular/core';
+
+@Component({
+  selector: 'forms',
+  styles: [],
+  template: `<router-outlet></router-outlet>`
+})
+class Forms {}
+
+const routing = RouterModule.forChild([
+  {
+    path: '',
+    component: Forms,
+    children: [
+      { path: 'inputs', component: Inputs },
+      { path: 'layouts', component: Layouts }
+    ]
+  }
+]);
+
 
 @NgModule({
   imports: [

@@ -1,10 +1,9 @@
-import { NgModule }      from '@angular/core';
-import { CommonModule }  from '@angular/common';
+import { NgModule, Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+import { Routes, RouterModule }  from '@angular/router';
 import { NgaModule } from '../../theme/nga.module';
 
-import { routing }       from './routing';
-import { Tables } from './component';
 import { BasicTables } from './basicTables/component';
 import { SmartTables } from './smartTables/component';
 import { Ng2SmartTableModule } from 'ng2-smart-table';
@@ -17,6 +16,23 @@ import { CondensedTable } from './basicTables/condensedTable/component';
 import { ContextualTable } from './basicTables/contextualTable/component';
 import { SmartTablesService } from './smartTables/service';
 
+@Component({
+  selector: 'forms',
+  styles: [],
+  template: `<router-outlet></router-outlet>`
+})
+class Tables {}
+
+const routing = RouterModule.forChild([
+  {
+    path: '',
+    component: Tables,
+    children: [
+      { path: 'basictables', component: BasicTables },
+      { path: 'smarttables', component: SmartTables }
+    ]
+  }
+]);
 
 @NgModule({
   imports: [
